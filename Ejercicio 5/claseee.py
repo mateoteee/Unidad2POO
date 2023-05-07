@@ -24,6 +24,10 @@ class PlanAhorro:
         self.__precio = float(input( "Ingrese el valor actualizado del vehículo: "))
         print("Valor del vehículo actualizado.")
     
+    def ValorCuotasParaLicitar(self):
+        cuot=self.__cuotlicitas*self.__importecuota
+        return cuot
+    
     @classmethod
     def ModificarCuotasLicitas(cls):
         print("Modificación de cuotas licitas para pagar un Plan de Ahorro: ")
