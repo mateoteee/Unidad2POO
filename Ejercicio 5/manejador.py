@@ -32,6 +32,12 @@ class ManejadorPlan:
         for i in range(len(self.__lista)):
             if (self.__lista[i].getValorCuota() < x):
                 self.__lista[i].MostrarVehiculo()
+    
+    def MostrarMonto (self):
+        i=0
+        while (i < len(self.__lista)):
+            j = self.__lista[i].ValorCuotasParaLicitar()
+            print(f"El monto para licitar el vehiculo {self.__lista[i].MostrarVehiculo()} es de {j}")
 
     
 
